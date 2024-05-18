@@ -16,4 +16,4 @@ phases:
   post_build:
     commands:
       - echo "Updating files in the S3 bucket..."
-      - aws s3 sync dist/properties/browser s3://hello-courses --delete
+      - aws s3 sync dist/hello-courses/browser s3://hello-courses --delete
